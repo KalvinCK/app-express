@@ -23,10 +23,6 @@ app.use(express.static(path.join(__dirname + "/public")));
 // Roteamento
 app.use("/", rotas);
 
-// Formularios
-app.post("/add", (req, res) => {
-  res.send("Nome enviado");
-});
 
 app.listen(porta, () => {
   console.log("server rodando");

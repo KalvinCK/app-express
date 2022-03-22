@@ -11,5 +11,12 @@ routes.get("/home", (req, res) => {
 routes.get("/sobre", (req, res) => {
   res.render("sobre");
 });
+routes.get("/login", (req, res) => {
+  res.render("login");
+});
+
+routes.post("/add", (req, res) => {
+  res.send("adicionado");
+});
 
 module.exports = routes;
