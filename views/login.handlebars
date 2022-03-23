@@ -1,13 +1,129 @@
 <head>
+    <style>
+        #formulario {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+            width: 100%;
+            background-color: white;
+        }
+
+        label,
+        input,
+        button {
+            margin: 0px 10px;
+            display: block;
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            border: 2px solid blueviolet;
+            width: 97%;
+            border-radius: 2px;
+            height: 35px;
+            box-shadow: 0px 0px 5px;
+        }
+
+        input:hover {
+            box-shadow: 0px 0px 10px black;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        #campo {
+            color: blueviolet;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+            background-color: white;
+            width: 650px;
+            height: 400px;
+            box-shadow: 0px 0px 10px black;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #cabecalho {
+            height: 40px;
+            width: 100%;
+            background-color: rgb(26, 26, 26);
+            position: static;
+            top: 0px;
+            left: -1px;
+            border: 1px solid blueviolet;
+            border-radius: 5px 5px 1px 1px;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        #butao {
+            background-color: rgb(26, 26, 26);
+            color: blueviolet;
+            border-radius: 2px;
+            border: 2px solid blueviolet;
+            padding: 5px 10px;
+            display: block;
+            margin-top: 20px;
+            width: 97%;
+            height: 35px;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px black;
+            font-size: 1.2rem;
+        }
+
+        #butao:hover {
+            color: rgb(78, 86, 255);
+            box-shadow: 0px 0px 10px black;
+        }
+
+        div {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #no-login {
+            text-align: center;
+            background: none;
+            cursor: pointer;
+        }
+
+        #no-login:hover {
+            color: black;
+        }
+
+        #link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin: 15px 225px;
+            height: 35px;
+        }
+
+        hr {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <form id="formulario" action="/add" method="POST">
-    <fieldset>
-        <legend>Cadastro</legend>
-        <label for="email"></label>
-        <input id="email" name="email" placeholder="insira seu email">
+    <fieldset id="campo">
+        <div id="cabecalho">
+            <p>Login</p>
+        </div>
         <br />
-        <label for="senha"></label>
-        <input name="password" id="password" placeholder="Insira senha">
-        <button id="butao" type="submit"> Adicionar</button>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Seu email">
+        <br />
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Sua senha">
+        <br />
+        <button id="butao" type="submit"> Increver-se</button>
+        <hr />
+        <a id="link" href="/">Não e inscrito?</a>
     </fieldset>
 </form>

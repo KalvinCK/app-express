@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,20 +10,26 @@
 
 <body id="root">
     <header class="header">
-        <a id="logo" href="/">Logo</a>
+        <a id="logo" href="/"><img id="icon" src="/img/simpsons.png"></a>
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">Menu
                 <span id="hamburguer"></span>
             </button>
             <ul class="menu" role="menu">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/">Contato</a></li>
+                <li><a class="lk" href="/home">Home</a></li>
+                <li><a class="lk" href="/sobre">Sobre</a></li>
+                <li><a class="lk" href="/">Contato</a></li>
+                <li><a class="lk" href="/login">Login</a></li>
             </ul>
         </nav>
     </header>
     {{{body}}}
+    <footer>
+        <p id="rodape">
+            Rodape
+        </p>
+    </footer>
     <script>
         const btnMobile = document.getElementById("btn-mobile"); function
             togleMenu(event) {

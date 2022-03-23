@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://locadfslhost/login")
+mongoose.connect("mongodb://localhost/login")
   .then(() => {
     console.log("mongodb conectado...");
   })
